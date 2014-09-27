@@ -1,0 +1,94 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.location-panel {
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 5px #888888;
+  margin-bottom: 10px;
+  position: relative;
+  .title {
+    width: 100%; 
+    display: block; 
+    position: 
+    absolute; 
+    z-index: 10;
+
+    @include opacity(0.9);
+    @include transition(opacity 0.5s ease);
+  }
+  .content {
+    @include opacity(1);
+    @include transition(opacity 0.5s ease);
+    img {
+      width: 100%;
+    }
+  }
+  .location-panel-footer {
+
+    line-height: 24px;
+
+    background-color: #000;
+    color: #aaa;
+    @include opacity(0.9);
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue";
+
+    @include transition(opacity 0.5s ease);
+    @include transition(color 0.5s ease);
+  }
+
+  &:hover, :active, :focus {
+    .title {
+      @include opacity(1);
+    }
+    .content {
+      @include opacity(0.9);
+    }
+    .location-panel-footer {
+      @include opacity(1);
+      color: #eee;
+    }
+  }
+}
+.location-panel-link {
+  &:hover, :active, :focus {
+    text-decoration: none;
+  }
+}
+
+.location-panel-name {
+  line-height: 38px;
+  height: 38px;
+  padding-left: 50%;
+  padding-right: 5px;
+
+  background-color: #111;
+  color: #dd0000;
+  text-align: center; 
+  font-weight: 900;
+  font-size: 22px;
+  font-family: Lato;
+  vertical-align: bottom;
+}
+
+.location-panel-descrption {
+  text-align: right;
+  color: #050100;
+}
+
+
+.home-carousel-show {
+  width:110%; 
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 5px #888888;
+
+  img  {
+    width: 100%;
+  }
+}
+

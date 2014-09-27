@@ -1,0 +1,28 @@
+<!-- start: Header -->
+<div id="navigation" class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand brand-header" href="/">
+        <%= image_tag "main_logo.jpg" %>
+      </a>
+    </div>
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/">Home</a></li>
+        <li><%= link_to "Capitol Hill", caphill_path %></li>
+        <li><%= link_to "Redmond", redmond_path %></li>
+        <li><a href="#">Bakery</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+

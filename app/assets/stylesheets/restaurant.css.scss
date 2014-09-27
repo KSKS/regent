@@ -1,0 +1,288 @@
+// $main-color-redmond: #412121;
+
+.intro {
+  padding: 0px 5px;
+  margin: 0 0;
+
+  @include box-shadow(0 0 5px rgba(0,0,0,0.5));
+
+  .description {
+    color: #ddd; 
+    margin: 20px 10px;
+    margin-left: 10px;
+  }
+
+  .title-regent {
+    float: left; 
+    margin-top: 8px; 
+    margin-right: 5px;
+  }
+  .title {
+    margin: 10px 0;
+    font-family: "Helvetica Neue";
+    font-size: 24px; 
+    font-weight: 700; 
+    line-height: 1.1; 
+    display: inline-block; 
+    @extend .clearfix;
+
+  }
+  .title-caphill {
+    @extend .title;
+    color: darken(#d5c9c7, 20%);
+  }
+  .title-redmond {
+    @extend .title;
+    color: #db6d6d;
+  }
+  .restaurant-main-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.intro-cap {
+  background-color: $main-color-cap;
+}
+.intro-redmond {
+  background-color: $main-color-redmond;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  // add padding at top of description
+  .description {
+    padding: 0 0 15px 0;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  // add padding at bottom of description
+  .description {
+    padding: 15px 0 0 0;
+  }
+}
+
+
+
+.row-info {
+  margin: 0px 0;
+  width: 100%;
+  .col-info {
+    padding: 0 0;
+    margin-top: 40px;
+    // @include box-shadow(0 0 3px rgba(0,0,0,0.2));
+    .info-type {
+      height: 2.5em;
+      line-height: 2.5;
+      text-align: center;
+      font-weight: bold;
+      color: #eee;
+    }
+
+    .info-content {
+      min-height: 236px;
+    }
+  }
+}
+
+
+.row-info-cap {
+  .col-info:nth-child(odd) {
+    .info-type {
+      background-color: $cap-info-type-bg-color-dark;
+      border-left: 1px solid $cap-info-type-border-color;
+      border-right: 1px solid $cap-info-type-border-color;
+    }
+    .info-content {
+      background-color: $cap-info-content-bg-color-dark;
+      border: 1px solid $cap-info-content-border-color;
+      border-top: 0;
+    }
+  }
+  .col-info:nth-child(even) {
+    .info-type {
+      background-color: $cap-info-type-bg-color-light;
+      border-left: 1px solid $cap-info-type-border-color;
+      border-right: 1px solid $cap-info-type-border-color;
+    }
+    .info-content {
+      background-color: $cap-info-content-bg-color-light;
+      border: 1px solid $cap-info-content-border-color;
+      border-top: 0;
+    }
+  }
+
+  .col-info {
+    .info-type {
+      border-right: 1px solid $cap-info-type-border-color;
+    }
+  }
+}
+
+
+.row-info-redmond {
+  .col-info:nth-child(odd) {
+    .info-type {
+      background-color: $redmond-info-type-bg-color-dark;
+      border-left: 1px solid $redmond-info-type-border-color;
+      border-right: 1px solid $redmond-info-type-border-color;
+    }
+    .info-content {
+      background-color: $redmond-info-content-bg-color-dark;
+      border: 1px solid $redmond-info-content-border-color;
+      border-top: 0;
+    }
+  }
+  .col-info:nth-child(even) {
+    .info-type {
+      background-color: $redmond-info-type-bg-color-light;
+      border-left: 1px solid $redmond-info-type-border-color;
+      border-right: 1px solid $redmond-info-type-border-color;
+    }
+    .info-content {
+      background-color: $redmond-info-content-bg-color-light;
+      border: 1px solid $redmond-info-content-border-color;
+      border-top: 0;
+    }
+  }
+
+  .col-info {
+    .info-type {
+      border-right: 1px solid $redmond-info-type-border-color;
+    }
+  }
+}
+
+
+
+.info-content-hours {
+  text-align: center;
+  padding: 20px 40px;
+}
+table.hours {
+  width: 100%;
+  font-size: 14;
+  line-height: 1.8;
+  table-layout:fixed;
+  td {
+    overflow: hidden;
+  }
+  col.time {
+    width: 100px;
+  }
+  td.time {
+    text-align: center;
+  }
+  .day-of-week {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.info-content-contacts {
+  padding: 20px 40px 10px 40px;
+}
+.contact-entry {
+  margin-bottom: 10px;
+}
+.contact-type {
+  font-weight: bold;
+  font-size: 0.9em
+}
+.contact-value {
+  word-wrap: break-word;
+}
+
+.info-content-map {
+}
+.map {
+  width: 100%;
+  height: 235px;
+}
+
+
+
+$menu-cap-bg-color: lighten(#bfadaa, 20%);
+$menu-cap-border-color: darken($menu-cap-bg-color, 5%);
+$menu-redmond-bg-color: #eedddd;
+$menu-remdond-border-color: darken($menu-redmond-bg-color, 5%);
+
+.menu {
+  margin-bottom: 40px;
+}
+.menu-cap {
+  background-color: $menu-cap-bg-color;
+  border: 1px solid $menu-cap-border-color;  
+}
+.menu-redmond {
+  background-color: $menu-redmond-bg-color;
+  border: 1px solid $menu-remdond-border-color;  
+}
+.row-menu {
+  margin-left: 0px;
+  margin-right: 0px;
+
+  hr {
+    width: 80%;
+    height: 0px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+
+    text-align:center;
+    margin: 0 10%;
+    padding: 0;
+  }
+}
+.menu-title {
+  height: 2.5em;
+  line-height: 2.5;
+  text-align: center;
+
+  color: #eee;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.menu-title-cap {
+  background-color: $main-color-cap; 
+}
+.menu-title-redmond {
+  background-color: $main-color-redmond;
+}
+.sub-menu {
+  padding: 20px 25px;
+}
+.sub-menu-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.sub-menu-entree {
+  @extend .clearfix;
+  margin-bottom: 5px;
+}
+
+.sub-menu-entree-name {
+  font-weight: normal;
+}
+.sub-menu-entree-price {
+  float: right;
+  font-weight: normal;
+  ul {
+    @extend .clearfix;
+    padding-left: 0px;
+    list-style-type: none;
+    .price-type {
+      @extend .small;
+      @extend .text-muted;
+    }
+    .price-value {
+      float: right;
+      text-align: right;
+      display: inline-block;
+      min-width: 3em;
+      margin-left: 1em;
+    }
+  }
+}
+

@@ -10,7 +10,59 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+
+//= require bootstrap
+//= require slick
+
+//= require pages
+
 //= require turbolinks
-//= require_tree .
+
+$(document).ready(function(){
+  $('.home-carousel-show').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.home-carousel-nav',
+    autoplay: true,
+    autoplayspeed: 5000,
+    speed: 1200,
+    centerPadding: "0px",
+    lazyLoad: "progressive"
+  });
+
+  // $('.home-carousel-nav').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   asNavFor: '.home-carousel-show',
+  //   dots: false,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+  //   centerPadding: "0px",
+  //   autoplay: true,
+  //   arrows: false,
+  //   autoplayspeed: 5000,
+  //   speed: 1200
+  // });
+
+  // if ($(window).width() >= 992) {
+  //   var infoCols = $(".info-content");
+  //   var maxHeight = 0;
+  //   if (infoCols.length > 0) {
+  //     infoCols.each(function(i, element) {
+  //       if ($(element).innerHeight() > maxHeight) {
+  //         maxHeight = $(element).innerHeight();
+  //       }
+  //     });
+  //     infoCols.innerHeight(maxHeight);
+  //     // infoCols.hide();
+  //     // infoCols.show();
+  //   }
+  // }
+});
+

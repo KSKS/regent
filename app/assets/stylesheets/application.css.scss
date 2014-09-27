@@ -1,0 +1,63 @@
+@import "variables";
+@import "color";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+// @import "slick";
+@import "slick.css";
+
+@import "header";
+@import "home.css.scss";
+@import "restaurant.css.scss";
+
+// Structure
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 47px;
+
+  min-height: 100%;
+
+  // font-family: "Helvetica Neue";
+  // font-weight: normal;
+  // font-size: 16px;
+
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 15px;
+
+  color: #111;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+#content {
+  margin: 0 auto;
+
+  background: #d0c9c7; /* Old browsers */
+  background: -moz-linear-gradient(top,  #d0c9c7 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0c9c7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #d0c9c7 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #d0c9c7 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #d0c9c7 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #d0c9c7 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0c9c7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 47px;
+  background-color: #222222;
+  text-align: center;
+}
+

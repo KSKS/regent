@@ -1,0 +1,688 @@
+<script type="text/javascript">
+  function initializeMap() {
+    var latLng = new google.maps.LatLng(47.615431, -122.313945);
+    var mapOptions = {
+      center: latLng,
+      zoom: 14
+    };
+    var map = new google.maps.Map(document.getElementById('map-caphill'),
+        mapOptions);
+
+    // var contentString = "<div class='map-info'><img src='<%= image_path('home/main_logo.jpg') %>'</img> </div>";
+    // var infowindow = new google.maps.InfoWindow({
+    //     content: contentString,
+    //     maxWidth: 100
+    // });
+
+    var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: 'Regent'
+    });
+
+    // google.maps.event.addListener(marker, 'click', function() {
+    //   infowindow.open(map, marker);
+    // });
+  }
+  google.maps.event.addDomListener(window, 'load', initializeMap);
+  google.maps.event.addDomListener(window, 'page:load', initializeMap);
+</script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+      <div class="row intro intro-cap">
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "capitol_hill/main.jpg", class: 'restaurant-main-image' %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="description">
+            <div>
+              <%= image_tag "regent_logo.png", class: "title-regent" %>
+              <span class="title-caphill"> Capitol Hill</span>
+            </div>
+            <br>
+            <p>
+              Located at Capitol Hill, Regent Capitol Hill is a vibrant and highest qualiy Experience the Northwest’s premier dining experience. Comfortable surroundings, prime custom-aged steaks, side dishes that define culinary excellence and an award winning wine list featuring bottles from near and far. All presented with an unmatched level of service and attention to detail. 
+            </p>
+          </div>
+        </div>
+      </div> <!-- end intro -->
+
+      <div class="row row-info row-info-cap">
+        <div class="col-xs-12 col-md-4 col-info">
+          <div class="info-type">
+            Hours
+          </div>
+          <div class="info-content info-content-hours">
+            <table class="hours">
+              <col></col>
+              <col class="time"></col>
+              <tr><td class="day-of-week">Monday</td><td class="time">10am - 10pm</td></tr>
+              <tr><td class="day-of-week">Tuesday</td><td class="time">Closed</td></tr>
+              <tr><td class="day-of-week">Wednesday</td><td class="time">10am - 10pm</td></tr>
+              <tr><td class="day-of-week">Thursday</td><td class="time">10am - 10pm</td></tr>
+              <tr><td class="day-of-week">Friday</td><td class="time">10am - 12pm</td></tr>
+              <tr><td class="day-of-week">Saturday</td><td class="time">10am - 12pm</td></tr>
+              <tr><td class="day-of-week">Sunday</td><td class="time">10am - 10pm</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-info">
+          <div class="info-type">
+            Contacts
+          </div>
+          <div class="info-content info-content-contacts">
+            <div class="contact-entry">
+              <div class="contact-type">Phone:</div>
+              <div class="contact-value">(206) 743-8866</div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-type">Email:</div>
+              <div class="contact-value">capitolhill@regentbakeryandcafe.com</div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-type">Address:</div>
+              <div class="contact-value">
+                <address>
+                  1404 E. Pine St
+                  Seattle, WA 98122
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-info">
+          <div class="info-type">
+            Direction
+          </div>
+          <div class="info-content info-content-map">
+            <div class="map" id="map-caphill">
+            </div>
+          </div>
+        </div>
+      </div> <!-- end info -->
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="menu-title menu-title-cap">
+            Menu
+          </div>
+        </div>
+      </div>
+      <div class="menu menu-cap">
+        <div class="row row-menu">
+          <div class="col-sm-6 col-md-4">
+            <div class="sub-menu">
+              <div class="sub-menu-title">Appetizer</div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">8.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Dry Salt and Pepper Crispy Tofu
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">6.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Barbecued Pork
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">12.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken, Roast Duck or BBQ Pork (Choose Two Items)
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">6.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Pepper Salt Chicken Wing (6pc)
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">13.28</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Deep Fried Squid with Dry Salt & Pepper
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">6.00</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Deep Fried Wonton Wrap
+                </div>
+              </div>
+            </div>
+          </div> <!-- Appetizer -->
+          <div class="col-sm-6 col-md-4">
+            <div class="sub-menu">
+              <div class="sub-menu-title">
+                Soup
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-type">Small</span><span class="price-value">4.15</span></li>
+                    <li><span class="price-type">Large</span><span class="price-value">6.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Hot & Sour Soup
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-type">Small</span><span class="price-value">4.15</span></li>
+                    <li><span class="price-type">Large</span><span class="price-value">6.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Egg Flower Corn Soup
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-type">Small</span><span class="price-value">5.15</span></li>
+                    <li><span class="price-type">Large</span><span class="price-value">8.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Shrimp Wonton Soup
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-type">Small</span><span class="price-value">3.95</span></li>
+                    <li><span class="price-type">Large</span><span class="price-value">6.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Egg Flower Soup
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">8.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Beef Soup
+                </div>
+              </div>
+            </div>
+          </div> <!-- end Soup -->
+          <div class="col-sm-6 col-md-4">
+            
+          </div>
+        </div>
+        <div class="row row-menu">
+          <hr>
+          <div class="col-sm-6 col-md-4">
+            <div class="sub-menu">
+              <div class="sub-menu-title">
+                Seafood
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Prawns In Lobster Sauce
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Shrimps in Black Bean Sauce
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">15.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Prawns with Chinese Broccoli
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Dry Salt and Pepper Prawns
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Kung Po Prawns (spicy)
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">13.50</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Cashew Nut Prawns
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Prawns with Mixed Vegetables
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">12.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Shrimps with Scrambled Egg
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Honey Walnut Prawns
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Prawns with Snow Peas
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">13.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Squids in Black Bean Sauce
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Squids with Seasonal Vegetables
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Squids with Snow Peas
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Sweet and Sour Prawns
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">14.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Curry Prawns
+                </div>
+              </div>
+            </div>
+          </div> <!-- end Seafood -->
+          <div class="col-sm-6 col-md-4">
+            <div class="sub-menu">
+              <div class="sub-menu-title">Hot Pot</div>
+                <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">11.00</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Beef Stew with Curry Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken or Pork with Curry Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Beef with Curry Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Mixed Vegetables with Curry Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Beef Stew Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">10.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Egg Plant and Meat with Hot Garlic Sauce Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">12.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Salted Fish Diced Chicken with Bean Curd Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">10.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Satay Beef and Bean Thread Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">10.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Beef with Ginger and Green Onion Hot Pot
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">10.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Bean Thread and Vegetables Hot Pot
+                </div>
+              </div>
+            </div>
+          </div> <!-- end Hot Pot -->
+          <div class="col-sm-6 col-md-4">
+            <div class="sub-menu">
+              <div class="sub-menu-title">Poultry</div>
+
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-type">Half</span><span class="price-value">12.25</span></li>
+                    <li><span class="price-type">Whole</span><span class="price-value">21.50</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Roast Duck
+                </div>
+              </div>
+
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-type">Half</span><span class="price-value">12.25</span></li>
+                    <li><span class="price-type">Whole</span><span class="price-value">21.50</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Salted Chidken
+                </div>
+              </div>
+
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">11.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Ginger Chicken
+                </div>
+              </div>
+
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">11.25</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  General Tsos Chicken (spicy)
+                </div>
+              </div>
+
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Sweet and Sour Chicken
+                </div>
+              </div>
+
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken with Broccoli
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken with Broccoli
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li><span class="price-value">9.75</span></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken with Seasonal Vegetables
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li>
+                      <span class="price-value">9.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Cashew Nut Chicken
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li>
+                      <span class="price-value">9.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken with Mushroom
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li>
+                      <span class="price-value">9.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken with Hot Garlic Sauce
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li>
+                      <span class="price-value">9.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Kung Pao Chicken
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li>
+                      <span class="price-value">9.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Chicken with Tomato
+                </div>
+              </div>
+              <div class="sub-menu-entree">
+                <div class="sub-menu-entree-price">
+                  <ul>
+                    <li>
+                      <span class="price-value">11.25</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu-entree-name">
+                  Orange Chicken
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- end Poultry -->
+
+        </div>
+      </div> <!-- end menu -->
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,32 @@
+$bg-color: #d0c9c7;
+
+
+$navbar-bg-color      : #2e0d00;
+$navbar-bg-hl-color    : #2e0d00;
+$navbar-li-bg-color     : #dddddd;
+$navbar-li-hl-color   : #dd3333;
+
+
+
+$main-color-redmond: #311111;
+$main-color-cap: lighten(#151100, 2%);
+
+$cap-info-type-bg-color-dark: $main-color-cap;
+$cap-info-type-bg-color-light: darken(#bfadaa, 40%);
+$cap-info-type-border-color: darken($cap-info-type-bg-color-dark, 5%);
+
+$cap-info-content-bg-color-dark: lighten(#bfadaa, 10%);
+$cap-info-content-bg-color-light: lighten(#bfadaa, 20%);
+$cap-info-content-border-color: darken($cap-info-content-bg-color-dark, 5%);
+
+
+$redmond-info-type-bg-color-dark: $main-color-redmond;// lighten(#151100, 2%);
+// $redmond-info-type-bg-color-light: #5b2e2e;// darken(#bfadaa, 40%);
+$redmond-info-type-bg-color-light: #805555;// darken(#bfadaa, 40%);
+$redmond-info-type-border-color: darken($redmond-info-type-bg-color-dark, 5%);
+
+// $redmond-info-content-bg-color-dark: #ddb6b6;// lighten(#bfadaa, 10%);
+$redmond-info-content-bg-color-dark: #e3d0cc;// lighten(#bfadaa, 10%);
+
+$redmond-info-content-bg-color-light: #eedddd;// lighten(#bfadaa, 20%);
+$redmond-info-content-border-color: darken($redmond-info-content-bg-color-dark, 5%);
