@@ -17,7 +17,7 @@ namespace :rails do
   task :setup_secrets => "deploy:set_rails_env" do
     on roles(:app) do |host|
       execute! "mkdir -p #{shared_path}/config"
-      template "rails/secrets.yml.erb", "#{shared_path}/config/secrets.yml", force: true
+      template "rails/secrets.yml.erb", "#{shared_path}/config/secrets.yml"
     end
   end
   after "deploy:started", "rails:setup_secrets"
