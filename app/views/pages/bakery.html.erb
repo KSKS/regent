@@ -2,16 +2,15 @@
 <script type="text/javascript">
   $(function() {
     $("#cakes-show").click(function() {
-      // $("#cakes-selection").show(800, "linear");
-      $("#cakes-selection").fadeIn(800, "linear");
+      $("#cakes-selection").fadeToggle(600, "linear");
     })
 
     $("#pastry-show").click(function() {
-      $("#pastry-selection").fadeIn(800, "linear");
+      $("#pastry-selection").fadeToggle(600, "linear");
     })
 
     $("#cookies-show").click(function() {
-      $("#cookies-selection").fadeIn(800, "linear");
+      $("#cookies-selection").fadeToggle(600, "linear");
     })
   })
 
@@ -31,7 +30,7 @@
             </div>
             <br>
             <p>
-              Our cakes can be engraved with your speical message for your special occasions. Please call for availability or make reservation at least one day prior.<br>
+              Our cakes can be engraved with your message for any special occasions. Please call for availability or make reservation at least one day prior.<br>
               <br>
               Large: 8' $40<br>
               Regular: 6' $30<br>
@@ -186,6 +185,14 @@
               <%= image_tag "pastry/toast/coconuttoast2.png" %>
             </div>
             <div class="pastry-name">Coconut Toast</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="pastry">
+            <div class="pastry-pic">
+              <%= image_tag "pastry/toast/caketoast2.png" %>
+            </div>
+            <div class="pastry-name">Cake Toast</div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
