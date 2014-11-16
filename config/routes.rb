@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'capitol_hill' => 'pages#capitol_hill', as: :caphill
   get 'redmond' => 'pages#redmond', as: :redmond
+  get 'bakery' => 'pages#bakery', as: :bakery
+  get 'redmond_menu' => 'pages#redmond_menu', as: :redmond_menu
   root 'pages#home'
 
   # Example of regular route:

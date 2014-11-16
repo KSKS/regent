@@ -1,0 +1,249 @@
+
+<script type="text/javascript">
+  $(function() {
+    $("#cakes-show").click(function() {
+      // $("#cakes-selection").show(800, "linear");
+      $("#cakes-selection").fadeIn(800, "linear");
+    })
+
+    $("#pastry-show").click(function() {
+      $("#pastry-selection").fadeIn(800, "linear");
+    })
+
+    $("#cookies-show").click(function() {
+      $("#cookies-selection").fadeIn(800, "linear");
+    })
+  })
+
+</script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <div class="row intro intro-cake">
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "cakes/chestnut2.png", class: 'restaurant-main-image' %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="description">
+            <div>
+              <span class="title-bakery">Cakes</span>
+            </div>
+            <br>
+            <p>
+              Our cakes can be engraved with your speical message for your special occasions. Please call for availability or make reservation at least one day prior.<br>
+              <br>
+              Large: 8' $40<br>
+              Regular: 6' $30<br>
+              <br>
+              <button id="cakes-show" class="btn btn-default"><span style="font-weight: bold; color: #888;">Show Selections</span></button>
+            </p>
+          </div>
+        </div>
+      </div> <!-- end intro -->
+      <div class="row" id="cakes-selection">
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/blackforest2.png" %>
+            </div>
+            <div class="cake-name">Black Forrest</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/chocolate_mousse2.png" %>
+            </div>
+            <div class="cake-name">Chocolate Mousse</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/chestnut2.png" %>
+            </div>
+            <div class="cake-name">Chestnut</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/hazelnut2.png" %>
+            </div>
+            <div class="cake-name">Hazelnut</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/cheesecake2.png" %>
+            </div>
+            <div class="cake-name">Cheesecake</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/mocha2.png" %>
+            </div>
+            <div class="cake-name">Mocha</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/mangomousse2.png" %>
+            </div>
+            <div class="cake-name">Mango Mousse</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/strawberry2.png" %>
+            </div>
+            <div class="cake-name">Strawberry</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/strawberrymousse2.png" %>
+            </div>
+            <div class="cake-name">Strawberry Mousse</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/swisschocolate2.png" %>
+            </div>
+            <div class="cake-name">Swiss Chocolate</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/tiramisu2.png" %>
+            </div>
+            <div class="cake-name">Tiramisu</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/taro2.png" %>
+            </div>
+            <div class="cake-name">Taro</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/fruit2.png" %>
+            </div>
+            <div class="cake-name">Fruit</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake">
+            <div class="cake-pic">
+              <%= image_tag "cakes/greentea2.png" %>
+            </div>
+            <div class="cake-name">Green Tea</div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="row intro intro-pastry">
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "pastry/buns/pineapplebun2-2.png", class: 'restaurant-main-image' %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="description">
+            <div>
+              <span class="title-bakery">Pastry</span>
+            </div>
+            <br>
+            <p>
+              Our buns are freshly baked from the oven everyday! First come first serve, so come early before our supplies last.
+              <br>
+              <br>
+              <button id="pastry-show" class="btn btn-default"><span style="font-weight: bold; color: #888;">Show Selections</span></button>
+            </p>
+          </div>
+        </div>
+      </div> <!-- end intro -->
+
+      <div class="row" id="pastry-selection">
+        <div class="col-xs-12 col-sm-4">
+          <div class="pastry">
+            <div class="pastry-pic">
+              <%= image_tag "pastry/toast/coconuttoast2.png" %>
+            </div>
+            <div class="pastry-name">Coconut Toast</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="pastry">
+            <div class="pastry-pic">
+              <%= image_tag "pastry/buns/pineapplebun2-2.png" %>
+            </div>
+            <div class="pastry-name">Pineapple Bun</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row intro intro-cookie">
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "cookies/chocolatewalnut2.png", class: 'restaurant-main-image' %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="description">
+            <div>
+              <span class="title-bakery">Cookies</span>
+            </div>
+            <br>
+            <p>
+              Whether it is for breakfast or afternoon tea, our cookies can sweeten you up for the rest of the day.
+              <br>
+              <br>
+              <button id="cookies-show" class="btn btn-default"><span style="font-weight: bold; color: #888;">Show Selections</span></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="cookies-selection">
+        <div class="col-xs-12 col-sm-4">
+          <div class="cookie">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/chocolatewalnut2.png" %>
+            </div>
+            <div class="cookie-name">Chocolate Walnut</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="cookie">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/almondsticks2.png" %>
+            </div>
+            <div class="cookie-name">Almond Sticks</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
