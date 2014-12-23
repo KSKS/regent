@@ -1,40 +1,94 @@
-.intro {
-  .title-bakery {
-    @extend .title;
-    color: #eeeeee;
+.title-bakery {
+  @extend .title;
+  color: #eeeeee;
+}
+.bakery-tab {
+  padding: 1em;
+  min-height: 370px;
+
+  img {
+    width: 100%;
+    padding: 5px;
+  }
+  > .bakery-description {
+    text-align: center;
+    padding-top: 1em;
+  }
+  .tab-title {
+    @extend .h4;
+    font-family: Lobster;
   }
 }
-.bakery-intro {
-  margin: 1em 0;
+.btn-show-bakery {
+  @extend .text-center;
+  background-color: black;
+  width: 100%;
+  margin-bottom: 1em;
+
+  > button {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #888;      
+  }
 }
 .bakery {
   @include box-shadow(0 0 4px rgba(0,0,0,0.3));
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .bakery-pic {
-  padding: 20px;
-  padding-bottom: 0px;
+  padding: 10px;
+
   img {
     width: 100%;
     height: 100%;
   }
+  background-color: white;
 }
 .bakery-name {
+  width: 100%;
   text-align: center;
   font-family: Lato;
   height: 2em;
   font-weight: 700;
   line-height: 2em;
   vertical-align: middle;
+
+}
+.bakery-modal {
+  > .modal-dialog {
+    > .modal-content {
+
+      .modal-title {
+        @extend .h3;
+        font-weight: 500;
+        font-family: "Lobster", cursive;
+      }
+      .modal-image {
+        > img {
+          background-color: white;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 
 
-.intro-cake {
-  @extend .bakery-intro;
+.cake-tab {
+  @extend .bakery-tab;
   background-color: #6F4E37;
-  .restaurant-main-image {
-    background-color: lighten(#6F4E37, 55%);
+  border: 1px solid darken(#6F4E37, 3%);
+  border-bottom: 0px;
+
+  img {
+    background-color: #eaddd5;
+  }
+  > .cake-description {
+    @extend .bakery-description;
+    color: white;
+    font-weight: 500;
   }
 }
 #cakes-selection {
@@ -47,7 +101,6 @@
 .cake-pic {
   @extend .bakery-pic;
 
-  background-color: lighten(#6F4E37, 55%);
   border: 1px solid lighten(#6F4E37, 45%);
 }
 .cake-name {
@@ -56,13 +109,35 @@
   color: lighten(#6F4E37, 55%);
   text-shadow: 0 0 #6F4E37;
 }
+#cake-modal {
+  @extend .bakery-modal;
+  > .modal-dialog {
+    > .modal-content {
+      background-color: lighten(#6F4E37, 10%);
+      color: white;
+    }
+  }
+}
+.btn-show-cake {
+  @extend .btn-show-bakery;
+  background-color: #6F4E37;
+  border: 1px solid darken(#6F4E37, 3%);
+  border-top: 0px;
+}
 
 
-.intro-pastry {
-  @extend .bakery-intro;
-  background-color: darken(#FBB117, 20%);
-  .restaurant-main-image {
-    background-color: lighten(#FBB117, 40%);
+.pastry-tab {
+  @extend .bakery-tab;
+  background-color: #a97303;
+  border: 1px solid darken(#a97303, 3%);
+  border-bottom: 0px;
+
+  img {
+    background-color: #fef4e0;
+  }
+  > .pastry-description {
+    @extend .bakery-description;
+    color: white;
   }
 }
 #pastry-selection {
@@ -75,7 +150,6 @@
 .pastry-pic {
   @extend .bakery-pic;
 
-  background-color: lighten(#FBB117, 40%);
   border: 1px solid lighten(#FBB117, 30%);
 }
 .pastry-name {
@@ -84,15 +158,34 @@
   color: white;
   text-shadow: 0 0 darken(#FBB117, 40%);
 }
-
-
-.intro-cookie {
-  @extend .bakery-intro;
-  background-color: #F2BB66;
-  .restaurant-main-image {
-    background-color: lighten(#F2BB66, 30%);
+#pastry-modal {
+  @extend .bakery-modal;
+  > .modal-dialog {
+    > .modal-content {
+      background-color: darken(#FBB117, 15%);
+      color: white;
+    }
   }
-  .description {
+}
+.btn-show-pastry {
+  @extend .btn-show-bakery;
+  background-color: #a97303;  
+  border: 1px solid darken(#a97303, 3%);
+  border-top: 0px;
+}
+
+
+.cookie-tab {
+  @extend .bakery-tab;
+  background-color: #F2BB66;
+  border: 1px solid darken(#F2BB66, 3%);
+  border-bottom: 0px;
+
+  img {
+    background-color: #fefaf3;
+  }
+  > .cookie-description {
+    @extend .bakery-description;
     color: #444;
   }
 }
@@ -105,12 +198,27 @@
 }
 .cookie-pic {
   @extend .bakery-pic;
-  background-color: lighten(#F2BB66, 30%);
+
   border: 1px solid lighten(#F2BB66, 20%);
 }
 .cookie-name {
   @extend .bakery-name;
+
   color: #555;
   text-shadow: 0 0 #888;
 }
-
+#cookie-modal {
+  @extend .bakery-modal;
+  > .modal-dialog {
+    > .modal-content {
+      background-color: lighten(#F2BB66, 10%);
+      color: #444;
+    }
+  }
+}
+.btn-show-cookie {
+  @extend .btn-show-bakery;
+  background-color: #F2BB66;
+  border: 1px solid darken(#F2BB66, 3%);
+  border-top: 0px;
+}

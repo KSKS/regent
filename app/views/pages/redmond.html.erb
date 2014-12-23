@@ -96,31 +96,6 @@
           </div>
         </div>
       </div> <!-- end info -->
-
-
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="menu-title menu-title-redmond">
-            Menu
-          </div>
-        </div>
-      </div>
-      <div class="menu menu-redmond">
-        <div class="row row-menu">
-          <div id="menu-content">
-          </div>
-        </div>
-      </div> <!-- end menu -->
-      <script type="text/javascript">
-        $(function() {
-          fetchMenus(function(err, menus) {
-            $.each(menus, function(i, menu) {
-              var menus = $("#menu-content");
-              menus.append(createMenu(menu.title, menu.entries));
-            });
-          });
-        });
-      </script>
     </div>
   </div>
 </div>

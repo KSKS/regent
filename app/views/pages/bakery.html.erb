@@ -1,250 +1,500 @@
 
-<script type="text/javascript">
-  $(function() {
-    $("#cakes-show").click(function() {
-      $("#cakes-selection").fadeToggle(600, "linear");
-    })
-
-    $("#pastry-show").click(function() {
-      $("#pastry-selection").fadeToggle(600, "linear");
-    })
-
-    $("#cookies-show").click(function() {
-      $("#cookies-selection").fadeToggle(600, "linear");
-    })
-  })
-
-</script>
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
-      <div class="row intro intro-cake">
-        <div class="col-xs-12 col-md-6">
-          <%= image_tag "cakes/chestnut2.png", class: 'restaurant-main-image' %>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="description">
+      <div class="row" style="">
+        <div class="col-xs-12 col-sm-4">
+          <div class="cake-tab">
             <div>
-              <span class="title-bakery">Cakes</span>
+              <%= image_tag "cakes/chestnut.png" %>
             </div>
-            <br>
-            <p>
-              Our cakes can be engraved with your message for any special occasions. Please call for availability or make reservation at least one day prior.<br>
-              <br>
-              Large: 8' $40<br>
-              Regular: 6' $30<br>
-              <br>
-              <button id="cakes-show" class="btn btn-default"><span style="font-weight: bold; color: #888;">Show Selections</span></button>
-            </p>
+            <div class="cake-description">
+              <div class="tab-title">Cakes</div>
+              Our cakes can be engraved with your message for any special occasions. Please call for availability or make reservation at least one day prior.
+            </div>
           </div>
-        </div>
-      </div> <!-- end intro -->
-      <div class="row" id="cakes-selection">
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/blackforest2.png" %>
-            </div>
-            <div class="cake-name">Black Forrest</div>
+          <div class="btn-show-cake">
+            <button class="btn btn-default" id="cakes-show">Show Selections</button>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/chocolate_mousse2.png" %>
-            </div>
-            <div class="cake-name">Chocolate Mousse</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/chestnut2.png" %>
-            </div>
-            <div class="cake-name">Chestnut</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/hazelnut2.png" %>
-            </div>
-            <div class="cake-name">Hazelnut</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/cheesecake2.png" %>
-            </div>
-            <div class="cake-name">Cheesecake</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/mocha2.png" %>
-            </div>
-            <div class="cake-name">Mocha</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/mangomousse2.png" %>
-            </div>
-            <div class="cake-name">Mango Mousse</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/strawberry2.png" %>
-            </div>
-            <div class="cake-name">Strawberry</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/strawberrymousse2.png" %>
-            </div>
-            <div class="cake-name">Strawberry Mousse</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/swisschocolate2.png" %>
-            </div>
-            <div class="cake-name">Swiss Chocolate</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/tiramisu2.png" %>
-            </div>
-            <div class="cake-name">Tiramisu</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/taro2.png" %>
-            </div>
-            <div class="cake-name">Taro</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/fruit2.png" %>
-            </div>
-            <div class="cake-name">Fruit</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cake">
-            <div class="cake-pic">
-              <%= image_tag "cakes/greentea2.png" %>
-            </div>
-            <div class="cake-name">Green Tea</div>
-          </div>
-        </div>
-
-
-      </div>
-
-
-      <div class="row intro intro-pastry">
-        <div class="col-xs-12 col-md-6">
-          <%= image_tag "pastry/buns/pineapplebun2-2.png", class: 'restaurant-main-image' %>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="description">
+          <div class="pastry-tab">
             <div>
-              <span class="title-bakery">Pastry</span>
+              <%= image_tag "pastry/pineapplebun2.png" %>
             </div>
-            <br>
-            <p>
+            <div class="pastry-description">
+              <div class="tab-title">Pastry</div>
               Our buns are freshly baked from the oven everyday! First come first serve, so come early before our supplies last.
-              <br>
-              <br>
-              <button id="pastry-show" class="btn btn-default"><span style="font-weight: bold; color: #888;">Show Selections</span></button>
-            </p>
-          </div>
-        </div>
-      </div> <!-- end intro -->
-
-      <div class="row" id="pastry-selection">
-        <div class="col-xs-12 col-sm-4">
-          <div class="pastry">
-            <div class="pastry-pic">
-              <%= image_tag "pastry/toast/coconuttoast2.png" %>
             </div>
-            <div class="pastry-name">Coconut Toast</div>
+          </div>
+          <div class="btn-show-pastry">
+            <button class="btn btn-default" id="pastry-show">Show Selections</button>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
-          <div class="pastry">
-            <div class="pastry-pic">
-              <%= image_tag "pastry/toast/caketoast2.png" %>
-            </div>
-            <div class="pastry-name">Cake Toast</div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="pastry">
-            <div class="pastry-pic">
-              <%= image_tag "pastry/buns/pineapplebun2-2.png" %>
-            </div>
-            <div class="pastry-name">Pineapple Bun</div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="row intro intro-cookie">
-        <div class="col-xs-12 col-md-6">
-          <%= image_tag "cookies/chocolatewalnut2.png", class: 'restaurant-main-image' %>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="description">
+          <div class="cookie-tab">
             <div>
-              <span class="title-bakery">Cookies</span>
+              <%= image_tag "cookies/walnut.png" %>
             </div>
-            <br>
-            <p>
+            <div class="cookie-description">
+              <div class="tab-title">Cookies</div>
               Whether it is for breakfast or afternoon tea, our cookies can sweeten you up for the rest of the day.
-              <br>
-              <br>
-              <button id="cookies-show" class="btn btn-default"><span style="font-weight: bold; color: #888;">Show Selections</span></button>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="cookies-selection">
-        <div class="col-xs-12 col-sm-4">
-          <div class="cookie">
-            <div class="cookie-pic">
-              <%= image_tag "cookies/chocolatewalnut2.png" %>
             </div>
-            <div class="cookie-name">Chocolate Walnut</div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="cookie">
-            <div class="cookie-pic">
-              <%= image_tag "cookies/almondsticks2.png" %>
-            </div>
-            <div class="cookie-name">Almond Sticks</div>
+          <div class="btn-show-cookie">
+            <button class="btn btn-default" id="cookies-show">Show Selections</button>
           </div>
         </div>
       </div>
 
+      <div class="row" id="cakes-selection">
+        <div class="modal fade" id="cake-modal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 modal-image">
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="modal-title">
+                    </div>
+                    <div class="modal-description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--         <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Black Forrest" data-description="">
+            <div class="cake-pic">
+              <%= image_tag "cakes/blackforest.jpg" %>
+            </div>
+            <div class="cake-name"><span>Black Forrest</span></div>
+          </div>
+        </div> -->
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Chocolate Mousse" data-description="">
+            <div class="cake-pic">
+              <%= image_tag "cakes/chocolate_mousse.png" %>
+            </div>
+            <div class="cake-name"><span>Chocolate Mousse</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Chestnut" data-description="Vanilla sponge cake layered with chestnut puree and covered in a caramel glaze. Decorated with chocolate tags and fresh strawberries.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/chestnut.png" %>
+            </div>
+            <div class="cake-name"><span>Chestnut</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Hazelnut Truffle" data-description="Chocolate cake layered with hazelnut flavored truffles. Decorated with chocolate tags and cocoa powders">
+            <div class="cake-pic">
+              <%= image_tag "cakes/hazelnut.png" %>
+            </div>
+            <div class="cake-name"><span>Hazelnut Truffle</span></div>
+          </div>
+        </div>
+<!--         <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Cheesecake" data-description="">
+            <div class="cake-pic">
+              <%= image_tag "cakes/cheesecake.png" %>
+            </div>
+            <div class="cake-name"><span>Cheesecake</span></div>
+          </div>
+        </div> -->
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Mocha" data-description="Vanilla sponge cake layered with fresh mocha whipping cream. Decorated with chocolate tags.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/mocha.png" %>
+            </div>
+            <div class="cake-name"><span>Mocha</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Mango Mousse" data-description="Available only in late spring and summer time. Vanilla cake layered with fresh mango. (Seasonal)">
+            <div class="cake-pic">
+              <%= image_tag "cakes/mangomousse.png" %>
+            </div>
+            <div class="cake-name"><span>Mango Mousse (Seasonal)</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Strawberry" data-description="Vanilla sponge cake layered with fresh strawberries and whipping cream. Decorated with fresh strawberries as well.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/strawberry.png" %>
+            </div>
+            <div class="cake-name"><span>Strawberry</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Strawberry Mousse" data-description="">
+            <div class="cake-pic">
+              <%= image_tag "cakes/strawberrymousse.png" %>
+            </div>
+            <div class="cake-name"><span>Strawberry Mousse</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Swiss Chocolate" data-description="Chocolate sponge layered with a light milk chocolate frosting.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/swisschocolate.png" %>
+            </div>
+            <div class="cake-name"><span>Swiss Chocolate</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Tiramisu" data-description="Regent’s style tiramisu layered with mascarpone cheese and vanilla sponge cake brushed with a touch of alcohol.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/tiramisu.png" %>
+            </div>
+            <div class="cake-name"><span>Tiramisu</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Taro" data-description="Vanilla sponge cake layered with fresh taro puree and covered with vanilla whipped cream.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/taro.png" %>
+            </div>
+            <div class="cake-name"><span>Taro</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Fruit" data-description="Light chiffon cake layered with fresh fruits (honey dew, cantaloupe and pineapple). With strawberries and kiwis on top.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/fruit.png" %>
+            </div>
+            <div class="cake-name"><span>Fruit</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Green Tea Mousse" data-description="">
+            <div class="cake-pic">
+              <%= image_tag "cakes/greentea_mousse.png" %>
+            </div>
+            <div class="cake-name"><span>Green Tea Mousse</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cake" data-target="#cake-modal" data-toggle="modal" data-title="Napolean" data-description="House made crispy wafers layered with vanilla cakes and buttercream.">
+            <div class="cake-pic">
+              <%= image_tag "cakes/napolean.png" %>
+            </div>
+            <div class="cake-name"><span>Napolean</span></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="pastry-selection">
+        <div class="modal fade" id="pastry-modal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 modal-image">
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="modal-title">
+                    </div>
+                    <div class="modal-description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="BBQ Pork" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/bbqporkbun.png" %>
+              </div>
+              <div class="pastry-name"><span>BBQ Pork</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Chestnut" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/chestnutbun.png" %>
+              </div>
+              <div class="pastry-name"><span>Chestnut</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Corktail" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/cocktailbun.png" %>
+              </div>
+              <div class="pastry-name"><span>Corktail</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Coconut Cream" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/coconutcreambun.png" %>
+              </div>
+              <div class="pastry-name"><span>Coconut Cream</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Coconut Pineapple" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/coconutpineapple.png" %>
+              </div>
+              <div class="pastry-name"><span>Coconut Pineapple</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Coconut Pineapple One" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/coconutpineappleone.png" %>
+              </div>
+              <div class="pastry-name"><span>Coconut Pineapple</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Corn and Ham" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/cornandham.png" %>
+              </div>
+              <div class="pastry-name"><span>Corn and Ham</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Curry Beef" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/currybeef.png" %>
+              </div>
+              <div class="pastry-name"><span>Curry Beef</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Custard" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/custard.png" %>
+              </div>
+              <div class="pastry-name"><span>Custard</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Green Union" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/greenonionbun.png" %>
+              </div>
+              <div class="pastry-name"><span>Green Union</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Ham and Cheese" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/hamandcheese.png" %>
+              </div>
+              <div class="pastry-name"><span>Ham and Cheese</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Milk Powder" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/milkpowder.png" %>
+              </div>
+              <div class="pastry-name"><span>Milk Powder</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Onion and Ham" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/onionandham.png" %>
+              </div>
+              <div class="pastry-name"><span>Onion and Ham</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Onion Sausage" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/onionsausage.png" %>
+              </div>
+              <div class="pastry-name"><span>Onion Sausage</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Pineapple" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/pineapplebun2.png" %>
+              </div>
+              <div class="pastry-name"><span>Pineapple</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Pork Sung" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/porksung.png" %>
+              </div>
+              <div class="pastry-name"><span>Pork Sung</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Pork Sung Onions" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/porksungonions.png" %>
+              </div>
+              <div class="pastry-name"><span>Pork Sung Onions</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Rasin Twist" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/rasintwist.png" %>
+              </div>
+              <div class="pastry-name"><span>Rasin Twist</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Red Bean" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/redbeanbun.png" %>
+              </div>
+              <div class="pastry-name"><span>Red Bean</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Red Bean Mochi" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/redbeanmochi.png" %>
+              </div>
+              <div class="pastry-name"><span>Red Bean Mochi</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Sausage" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/sausagebun.png" %>
+              </div>
+              <div class="pastry-name"><span>Sausage</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Taro Pineapple" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/taropineapplebun.png" %>
+              </div>
+              <div class="pastry-name"><span>Taro Pineapple</span></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="pastry" data-target="#pastry-modal" data-toggle="modal" data-title="Three Style" data-description="">
+              <div class="pastry-pic">
+                <%= image_tag "pastry/threestylebun.png" %>
+              </div>
+              <div class="pastry-name"><span>Three Style</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row" id="cookies-selection">
+        <div class="modal fade" id="cookie-modal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 modal-image">
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="modal-title">
+                    </div>
+                    <div class="modal-description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Almond" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/almond.png" %>
+            </div>
+            <div class="cookie-name"><span>Almond</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Almond Tuiles" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/almondtuiles.png" %>
+            </div>
+            <div class="cookie-name"><span>Almond Tuiles</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Chocolate Chip" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/chocolatechip.png" %>
+            </div>
+            <div class="cookie-name"><span>Chocolate Chip</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Chocolate Walnut" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/chocolatewalnut.png" %>
+            </div>
+            <div class="cookie-name"><span>Chocolate Walnut</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Coconut" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/coconut.png" %>
+            </div>
+            <div class="cookie-name"><span>Coconut</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Coffee Almond" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/coffeealmond.png" %>
+            </div>
+            <div class="cookie-name"><span>Coffee Almond</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Cranberry" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/cranberry.png" %>
+            </div>
+            <div class="cookie-name"><span>Cranberry</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Milk" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/milk.png" %>
+            </div>
+            <div class="cookie-name"><span>Milk</span></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="cookie" data-target="#cookie-modal" data-toggle="modal" data-title="Walnut" data-description="">
+            <div class="cookie-pic">
+              <%= image_tag "cookies/walnut.png" %>
+            </div>
+            <div class="cookie-name"><span>Walnut</span></div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

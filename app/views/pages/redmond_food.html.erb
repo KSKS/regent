@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="menu-title menu-title-redmond">
+            Menu
+          </div>
+        </div>
+      </div>
+      <div class="menu menu-redmond">
+        <div class="row row-menu">
+          <div id="menu-content">
+            <div class="menu-loading"><i class="fa fa-spinner fa-spin"></i> Loading</div>
+          </div>
+        </div>
+      </div> <!-- end menu -->
+      <script type="text/javascript">
+        $(function() {
+          fetchMenus("redmond", function(err, menus) {
+            var menuContent = $("#menu-content");
+            menuContent.empty();
+
+            $.each(menus, function(i, menu) {
+              menuContent.append(createMenu(menu.title, menu.entries));
+            });
+
+            if (isBreakpoint("xs")) {
+              closeMenu($(".sub-menu"));
+            }
+          });
+        });
+      </script>
+    </div>
+  </div>
+</div>

@@ -15,7 +15,11 @@
                   </div>
                   
                   <div class="location-panel-footer">
-                    Hours&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;Location
+                    <%= link_to "Hours", caphill_path %>
+                    &nbsp;&nbsp;&nbsp;
+                    <%= link_to "Menu", cap_food_path %>
+                    &nbsp;&nbsp;&nbsp;
+                    <%= link_to "Location", caphill_path %>
                   </div>
 
                 </div>
@@ -33,7 +37,11 @@
                   </div>
                   
                   <div class="location-panel-footer">
-                    Hours&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;Location
+                    <%= link_to "Hours", redmond_path %>
+                    &nbsp;&nbsp;&nbsp;
+                    <%= link_to "Menu", redmond_food_path %>
+                    &nbsp;&nbsp;&nbsp;
+                    <%= link_to "Location", redmond_path %>
                   </div>
 
                 </div>
@@ -58,6 +66,19 @@
             <div><%= image_tag "home/DumplingsChilli.jpg" %></div>
             <div><%= image_tag "home/RegentFriedRice.jpg" %></div>
           </div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div class="contacts">
+            <!-- <%= image_tag "home/facebook_114.png" %> -->
+            <%= link_to "https://www.facebook.com/regentbakery" do %>
+              <i class="fa fa-facebook-square fa-2x"></i>
+            <% end %>
+            <%= mail_to "capitolhill@regentbakeryandcafe.com" do %>
+              <i class="fa fa-envelope-square fa-2x"></i>
+            <% end %>
+          </div>
         </div>
       </div>
 

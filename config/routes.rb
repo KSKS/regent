@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'redmond' => 'pages#redmond', as: :redmond
   get 'bakery' => 'pages#bakery', as: :bakery
   get 'redmond_menu' => 'pages#redmond_menu', as: :redmond_menu
+  get 'cap_menu' => 'pages#cap_menu', as: :cap_menu
+  get 'redmond_food' => 'pages#redmond_food', as: :redmond_food
+  get 'cap_food' => 'pages#cap_food', as: :cap_food
+  get 'drinks' => 'pages#drinks', as: :drinks
   root 'pages#home'
 
   # Example of regular route:

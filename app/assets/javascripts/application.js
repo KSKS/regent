@@ -17,8 +17,10 @@
 
 //= require bootstrap
 //= require slick
+//= require jquery.textfill
 
 //= require pages
+//= require bakery
 
 //= require turbolinks
 
@@ -64,5 +66,10 @@ $(document).ready(function(){
   //     // infoCols.show();
   //   }
   // }
+
+
 });
 
+function isBreakpoint( alias ) {
+    return $('.device-' + alias).is(':visible');
+}

@@ -19,6 +19,7 @@
   }
 }
 
+
 .brand {
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
   font-size: $font-size-large;
@@ -103,14 +104,18 @@
     color: $navbar-li-bg-color;
     &:hover {
       color: $navbar-li-hl-color; }}}
-@media (max-width: $grid-float-breakpoint) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-    > li > a {
-      color: $navbar-li-bg-color;
-      &:hover, &:focus {
-        color: $navbar-li-hl-color; }}
-    > .active {
-      > a, > a:hover, > a:focus, {
-        color: $navbar-li-hl-color;
-        background-color: $navbar-bg-hl-color; }}}
+
+
+.navbar-default .navbar-nav .open .dropdown-menu,
+.navbar-default .navbar-nav .dropdown-menu {
+  background-color: $navbar-li-bg-color;
+  > li > a {
+    color: $navbar-bg-color;
+    font-weight: 500;
+    font-family: "Helvetica Neue";
+    background-color: $navbar-li-bg-color; 
+    &:active, &:hover, &:focus {
+      background-color: darken($navbar-li-bg-color, 10%); 
+    }    
+  }
 }

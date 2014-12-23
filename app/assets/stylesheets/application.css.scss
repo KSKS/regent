@@ -1,3 +1,6 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @import "variables";
 @import "color";
 
@@ -10,6 +13,7 @@
 @import "home.css.scss";
 @import "restaurant.css.scss";
 @import "bakery.css.scss";
+@import "drinks.css.scss";
 
 // Structure
 html {

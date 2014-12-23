@@ -65,6 +65,8 @@
 
 .row-info {
   margin: 0px 0;
+  margin-bottom: 20px;
+
   width: 100%;
   .col-info {
     padding: 0 0;
@@ -221,6 +223,8 @@ $menu-remdond-border-color: darken($menu-redmond-bg-color, 5%);
 .row-menu {
   margin-left: 0px;
   margin-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 
   hr {
     width: 80%;
@@ -248,14 +252,41 @@ $menu-remdond-border-color: darken($menu-redmond-bg-color, 5%);
 .menu-title-redmond {
   background-color: $main-color-redmond;
 }
+.menu-loading {
+  @extend .text-muted;
+  @extend .text-center;
+  @extend .h4;
+  width: 100%;
+  margin: 10px 0;
+}
 .sub-menu {
-  padding: 20px 25px;
+  padding: 0px 25px;
 }
 .sub-menu-title {
   font-size: 20px;
   font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 10px 5px 5px 5px;
+
+  border-bottom: 2px solid #111;
+  margin-bottom: 5px;
+
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(64,64,64,0.1);
+  }
+  > i {
+    border-color: #111;
+  }
+}
+.sub-menu-entrees {
+  padding: 5px 5px 20px 5px;
+
+  &.opened {
+    display: block;
+  }
+  &.closed {
+    display: none;
+  }
 }
 .sub-menu-entree {
   @extend .clearfix;
