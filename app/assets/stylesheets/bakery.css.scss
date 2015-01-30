@@ -4,6 +4,7 @@
 }
 .bakery-tab {
   min-height: 370px;
+  border: 0;
 
   img {
     width: 100%;
@@ -11,6 +12,7 @@
   > .bakery-description {
     text-align: center;
     padding-top: 1em;
+    min-height: 160px;
   }
   .tab-title {
     @extend .h4;
@@ -26,7 +28,7 @@
   > button {
     margin-bottom: 10px;
     font-weight: bold;
-    color: #888;      
+    color: #666;      
   }
 }
 .bakery {
@@ -39,7 +41,7 @@
 
   img {
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
   background-color: white;
 }
@@ -56,6 +58,11 @@
 .bakery-modal {
   > .modal-dialog {
     > .modal-content {
+      text-align: center;
+      @media (min-width: $screen-sm-min) {
+        text-align: left;
+      }
+
 
       .modal-title {
         @extend .h3;
@@ -77,8 +84,6 @@
 .cake-tab {
   @extend .bakery-tab;
   background-color: #6F4E37;
-  border: 1px solid darken(#6F4E37, 3%);
-  border-bottom: 0px;
 
   img {
     background-color: #eaddd5;
@@ -127,8 +132,6 @@
 .pastry-tab {
   @extend .bakery-tab;
   background-color: #a97303;
-  border: 1px solid darken(#a97303, 3%);
-  border-bottom: 0px;
 
   img {
     background-color: #fef4e0;
@@ -176,8 +179,6 @@
 .cookie-tab {
   @extend .bakery-tab;
   background-color: #F2BB66;
-  border: 1px solid darken(#F2BB66, 3%);
-  border-bottom: 0px;
 
   img {
     background-color: #fefaf3;

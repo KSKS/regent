@@ -34,6 +34,63 @@
   </div>
 
   <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2">
+          <table class="footer-info">
+            <tbody>
+              <tr>
+                <td><div class="footer-title">Capital Hill</div></td>
+                <td>
+                  <div class="footer-address">
+                    <address>
+                      1404 E. Pine St<br>
+                      Seattle, WA 98122
+                    </address>
+                </td>
+                <td>
+                  <div class="footer-contacts">
+                    <a href="tel:206-743-8866" class="phone">(206) 743-8866</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-0">
+          <table class="footer-info">
+            <tbody>
+              <tr>
+                <td><div class="footer-title">Redmond</div></td>
+                <td>
+                  <div class="footer-address">
+                    <address>
+                      15159 NE 24th St <br>
+                      Redmond, WA 98052
+                    </address>
+                </td>
+                <td>
+                  <div class="footer-contacts">
+                    <a href="tel:425-378-1498" class="phone">(425) 378-1498</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="ss">
+            <%= link_to "Facebook", "https://www.facebook.com/regentbakery", target: "_blank" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= mail_to "capitolhill@regentbakeryandcafe.com", "Email" %>
+            <br>
+          </div>
+          <div class="copyright">
+            Copyright &copy; <%= Time.now.year %> Regent Bakery and Cafe 
+          </div>
+        </div> 
+      </div>
+    </div>
   </footer>
 
 
