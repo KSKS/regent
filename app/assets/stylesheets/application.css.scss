@@ -91,28 +91,31 @@ footer {
       text-decoration: none;
     }
   }
-
+  .ss-link {
+    font-weight: 600;
+  }
+  .col-footer {
+    overflow: hidden;
+    > .footer-left-panel {
+      width: 50%;
+      text-align: right;
+      float: left;
+    }
+    > .footer-right-panel {
+      width: 50%;
+      text-align: left;
+      float: left;
+    }
+  }
   table.footer-info {
+    margin: 0 20px;
     text-align: left;
     display: inline-block;
     td {
-      vertical-align: top;
-      padding-bottom: 10px;
       > .footer-title {
         font-weight: 600;
-        min-width: 90px;
-      }
-      > .footer-address {
-        min-width: 130px;
-      }
-      > .footer-contacts {
-        min-width: 90px;
       }
     }
-  }
-  .ss {
-    font-weight: 600;
-    margin-bottom: 10px;
   }
   .copyright {
     font-size: 10px;
