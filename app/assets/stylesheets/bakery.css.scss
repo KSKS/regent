@@ -3,7 +3,7 @@
   color: #eeeeee;
 }
 .bakery-tab {
-  min-height: 370px;
+  min-height: 170px;
   border: 0;
 
   img {
@@ -11,8 +11,8 @@
   }
   > .bakery-description {
     text-align: center;
-    padding-top: 1em;
-    min-height: 160px;
+    padding: 0.5em;
+    min-height: 50px;
   }
   .tab-title {
     @extend .h4;
