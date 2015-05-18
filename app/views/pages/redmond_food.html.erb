@@ -16,19 +16,17 @@
         </div>
       </div> <!-- end menu -->
       <script type="text/javascript">
-        $(function() {
-          fetchMenus("redmond", function(err, menus) {
-            var menuContent = $("#menu-content");
-            menuContent.empty();
+        fetchMenus("redmond", function(err, menus) {
+          var menuContent = $("#menu-content");
+          menuContent.empty();
 
-            $.each(menus, function(i, menu) {
-              menuContent.append(createMenu(menu.title, menu.entries));
-            });
-
-            if (isBreakpoint("xs")) {
-              closeMenu($(".sub-menu"));
-            }
+          $.each(menus, function(i, menu) {
+            menuContent.append(createMenu(menu.title, menu.entries));
           });
+
+          if (isBreakpoint("xs")) {
+            closeMenu($(".sub-menu"));
+          }
         });
       </script>
     </div>

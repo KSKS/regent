@@ -1,6 +1,4 @@
 var fetchMenus = function(location, cb) {
-
-
   var path;
 
   if (location === "redmond") {
