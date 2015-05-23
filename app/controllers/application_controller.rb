@@ -6,11 +6,11 @@ class ApplicationController < ActionController::Base
   def fetch_menu(location)
     client_id = "c3sbrpbtkbs5gverurfkxpemc"
     if location == :redmond
-      sig = 'IjeNxhBZLU0ay4A9YFnetnLf-ys'
-      location_id = "regent-bakery--cafe"
-    else
       sig = 'IuvsJcoL3dVSOGy2UJoUp0PewfI'
       location_id = "regent-bakery-and-cafe"
+    else
+      sig = 'IjeNxhBZLU0ay4A9YFnetnLf-ys'
+      location_id = "regent-bakery--cafe"
     end
 
     response = RestClient.get "http://api.singleplatform.co/locations/#{location_id}/menu", 
