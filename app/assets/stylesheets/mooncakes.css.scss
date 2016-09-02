@@ -1,0 +1,36 @@
+
+.table-mooncakes {
+  margin-top: 50px;
+  > thead {
+    background-color: #805555;
+    color: #eee;
+    .td-mooncakes-name {
+
+    }
+
+    .td-mooncakes-piece-price {
+      text-align: center;
+    }
+
+    .td-mooncakes-box-price {
+      text-align: center;
+    }
+
+  }
+  > tbody {
+    background-color: #eedddd;
+    .td-mooncakes-name {
+
+    }
+
+    .td-mooncakes-piece-price {
+      text-align: center;
+      line-height: 2.84em !important;
+    }
+
+    .td-mooncakes-box-price {
+      text-align: center;
+      line-height: 2.84em !important;
+    }
+  }
+}

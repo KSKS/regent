@@ -29,5 +29,8 @@ class PagesController < ApplicationController
   def drinks
   end
 
+  def mooncakes
+  end
+
 end
 
