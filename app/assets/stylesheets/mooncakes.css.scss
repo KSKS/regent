@@ -16,17 +16,19 @@
 
     .td-mooncakes-piece-price {
       text-align: center;
+      width: 64px;
     }
 
     .td-mooncakes-box-price {
       text-align: center;
+      width: 114px;
     }
 
   }
   > tbody {
     background-color: #eedddd;
     .td-mooncakes-name {
-
+      word-break: keep-all;
     }
 
     .td-mooncakes-piece-price {
