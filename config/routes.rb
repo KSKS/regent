@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'redmond_food' => 'pages#redmond_food', as: :redmond_food
   get 'cap_food' => 'pages#cap_food', as: :cap_food
   get 'drinks' => 'pages#drinks', as: :drinks
-  get 'mooncakes' => 'pages#mooncakes', as: :mooncakes
+  # get 'mooncakes' => 'pages#mooncakes', as: :mooncakes
   root 'pages#home'
 
   # Example of regular route:
