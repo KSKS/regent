@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("turbolinks:load", function() {
 
   $("#cakes-show").click(function() {
     $("#cakes-selection").fadeToggle(600, "linear", function() {

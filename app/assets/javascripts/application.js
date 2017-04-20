@@ -24,7 +24,7 @@
 
 //= require turbolinks
 
-$(document).ready(function(){
+document.addEventListener("turbolinks:load", function(){
   $('.home-carousel-show').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

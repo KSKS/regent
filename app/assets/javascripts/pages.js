@@ -93,7 +93,7 @@ var isMenuOpened = function(element) {
   return element.children(".sub-menu-entrees").hasClass("opened");
 };
 
-$(function() {
+document.addEventListener("turbolinks:load", function() {
   $("#menu-content").on("click", ".sub-menu-title", function(event) {
     var subMenu = $(this).parent();
     if (isMenuOpened(subMenu)) {
