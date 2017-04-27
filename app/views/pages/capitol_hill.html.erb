@@ -1,5 +1,6 @@
 <script type="text/javascript">
   function initializeMap() {
+    console.log("initializ map");
     var latLng = new google.maps.LatLng(47.615431, -122.313945);
     var mapOptions = {
       center: latLng,
@@ -13,11 +14,8 @@
         map: map,
         title: 'Regent'
     });
-
-
   }
-  google.maps.event.addDomListener(window, 'load', initializeMap);
-  google.maps.event.addDomListener(window, 'page:load', initializeMap);
+  google.maps.event.addDomListener(window, 'turbolinks:load', initializeMap);
 </script>
 
 <div class="container-fluid">
