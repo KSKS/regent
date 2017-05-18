@@ -35,6 +35,10 @@
     @extend .title;
     color: #db6d6d;
   }
+  .title-factoria {
+    @extend .title;
+    color: lighten(#691a40, 25%);
+  }
   .restaurant-main-image {
     width: 100%;
     margin: 20px 0;
@@ -45,6 +49,9 @@
 }
 .intro-redmond {
   background-color: $main-color-redmond;
+}
+.intro-factoria {
+  background-color: $main-color-factoria;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
@@ -154,6 +161,38 @@
   }
 }
 
+.row-info-factoria {
+  .col-info:nth-child(odd) {
+    .info-type {
+      background-color: $factoria-info-type-bg-color-dark;
+      border-left: 1px solid $factoria-info-type-border-color;
+      border-right: 1px solid $factoria-info-type-border-color;
+    }
+    .info-content {
+      background-color: $factoria-info-content-bg-color-dark;
+      border: 1px solid $factoria-info-content-border-color;
+      border-top: 0;
+    }
+  }
+  .col-info:nth-child(even) {
+    .info-type {
+      background-color: $factoria-info-type-bg-color-light;
+      border-left: 1px solid $factoria-info-type-border-color;
+      border-right: 1px solid $factoria-info-type-border-color;
+    }
+    .info-content {
+      background-color: $factoria-info-content-bg-color-light;
+      border: 1px solid $factoria-info-content-border-color;
+      border-top: 0;
+    }
+  }
+
+  .col-info {
+    .info-type {
+      border-right: 1px solid $factoria-info-type-border-color;
+    }
+  }
+}
 
 
 .info-content-hours {
@@ -172,12 +211,13 @@ table.hours {
     width: 100px;
   }
   td.time {
-    text-align: center;
+    text-align: right;
   }
   .day-of-week {
     font-size: 0.9em;
     font-weight: bold;
     text-align: left;
+    width: 100px;
   }
 }
 

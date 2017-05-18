@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get 'capitol_hill' => 'pages#capitol_hill', as: :caphill
   get 'redmond' => 'pages#redmond', as: :redmond
+  get 'factoria' => 'pages#factoria', as: :factoria
   get 'bakery' => 'pages#bakery', as: :bakery
   get 'redmond_menu' => 'pages#redmond_menu', as: :redmond_menu
   get 'cap_menu' => 'pages#cap_menu', as: :cap_menu

@@ -1,0 +1,102 @@
+<script type="text/javascript">
+  function initializeMap() {
+    console.log("initializ map");
+    var latLng = new google.maps.LatLng(47.576641, -122.168734);
+    var mapOptions = {
+      center: latLng,
+      zoom: 14
+    };
+    var map = new google.maps.Map(document.getElementById('map-factoria'),
+        mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: 'Regent'
+    });
+  }
+  google.maps.event.addDomListener(window, 'turbolinks:load', initializeMap);
+</script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+      <div class="row intro intro-factoria">
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "factoria/store.png", class: 'restaurant-main-image' %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="description">
+            <div>
+              <%= image_tag "regent_logo.png", class: "title-regent" %>
+              <span class="title-factoria"> Factoria</span>
+            </div>
+            <br>
+            <p>
+              descriptions needed...
+
+          </div>
+        </div>
+      </div> <!-- end intro -->
+
+      <div class="row row-info row-info-factoria">
+        <div class="col-xs-12 col-md-4 col-info">
+          <div class="info-type">
+            Hours
+          </div>
+          <div class="info-content info-content-hours">
+            <table class="hours">
+              <col></col>
+              <col class="time"></col>
+              <tr><td class="day-of-week">Monday</td><td class="time">9:30am - 7:00pm</td></tr>
+              <tr><td class="day-of-week">Tuesday</td><td class="time">9:30am - 7:00pm</td></tr>
+              <tr><td class="day-of-week">Wednesday</td><td class="time">9:30am - 7:00pm</td></tr>
+              <tr><td class="day-of-week">Thursday</td><td class="time">9:30am - 7:00pm</td></tr>
+              <tr><td class="day-of-week">Friday</td><td class="time">9:30am - 7:00pm</td></tr>
+              <tr><td class="day-of-week">Saturday</td><td class="time">9:30am - 7:00pm</td></tr>
+              <tr><td class="day-of-week">Sunday</td><td class="time">10:00am - 6:00pm</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-info">
+          <div class="info-type">
+            Contacts
+          </div>
+          <div class="info-content info-content-contacts">
+            <div class="contact-entry">
+              <div class="contact-type">Phone:</div>
+              <div class="contact-value">(425) 747-0079</div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-type">Email:</div>
+              <div class="contact-value">redmond@regentbakeryandcafe.com</div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-type">Address:</div>
+              <div class="contact-value">
+                <address>
+                  12816 SE 38th St Ste F
+                  Bellevue, WA 98006
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-info">
+          <div class="info-type">
+            Direction
+          </div>
+          <div class="info-content info-content-map">
+            <div class="map" id="map-factoria">
+            </div>
+          </div>
+        </div>
+      </div> <!-- end info -->
+    </div>
+  </div>
+</div>
+
+
+
+
+

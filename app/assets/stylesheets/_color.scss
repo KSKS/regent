@@ -10,6 +10,7 @@ $navbar-li-hl-color   : #dd3333;
 
 $main-color-redmond: #311111;
 $main-color-cap: lighten(#151100, 2%);
+$main-color-factoria: darken(#691a40, 10%);
 
 $cap-info-type-bg-color-dark: $main-color-cap;
 $cap-info-type-bg-color-light: darken(#bfadaa, 40%);
@@ -31,6 +32,15 @@ $redmond-info-content-bg-color-dark: #e3d0cc;// lighten(#bfadaa, 10%);
 $redmond-info-content-bg-color-light: #eedddd;// lighten(#bfadaa, 20%);
 $redmond-info-content-border-color: darken($redmond-info-content-bg-color-dark, 5%);
 
+
+$factoria-info-type-bg-color-dark: $main-color-factoria;// lighten(#151100, 2%);
+$factoria-info-type-bg-color-light: darken(#9e3668, 10%);// darken(#bfadaa, 40%);
+$factoria-info-type-border-color: darken($factoria-info-type-bg-color-dark, 5%);
+
+$factoria-info-content-bg-color-dark: lighten(#f6a9ce, 10%);// lighten(#bfadaa, 10%);
+
+$factoria-info-content-bg-color-light: #fde3f0;// lighten(#bfadaa, 20%);
+$factoria-info-content-border-color: darken($factoria-info-content-bg-color-dark, 5%);
 
 
 $main-color-mooncakes: #311111;
