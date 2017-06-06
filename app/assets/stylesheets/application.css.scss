@@ -96,20 +96,16 @@ footer {
     font-weight: 600;
   }
   .col-footer {
+    text-align: center;
     overflow: hidden;
-    > .footer-left-panel {
-      width: 50%;
-      text-align: right;
-      float: left;
-    }
-    > .footer-right-panel {
-      width: 50%;
-      text-align: left;
-      float: left;
+    display: inline-block;
+    > .footer-panel {
+      display: inline;
     }
   }
   table.footer-info {
     margin: 0 20px;
+    width: 120px;
     text-align: left;
     display: inline-block;
     td {
