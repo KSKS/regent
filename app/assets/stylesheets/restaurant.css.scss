@@ -201,8 +201,8 @@
 }
 table.hours {
   width: 100%;
-  font-size: 14;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.8em;
   table-layout:fixed;
   td {
     overflow: hidden;
@@ -217,7 +217,7 @@ table.hours {
     font-size: 0.9em;
     font-weight: bold;
     text-align: left;
-    width: 100px;
+    width: 70px;
   }
 }
 
