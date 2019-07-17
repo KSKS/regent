@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.7.2'
+lock '3.11.0'
 
 set :application, 'regent'
 set :repo_url, 'git@github.com:KSKS/regent.git'
