@@ -25,18 +25,18 @@
 //= require turbolinks
 
 document.addEventListener("turbolinks:load", function(){
-  // $('.home-carousel-show').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   fade: true,
-  //   asNavFor: '.home-carousel-nav',
-  //   autoplay: true,
-  //   autoplayspeed: 5000,
-  //   speed: 1200,
-  //   centerPadding: "0px",
-  //   lazyLoad: "progressive"
-  // });
+  $('.home-carousel-show').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.home-carousel-nav',
+    autoplay: true,
+    autoplayspeed: 5000,
+    speed: 1200,
+    centerPadding: "0px",
+    lazyLoad: "progressive"
+  });
 
   // $('.home-carousel-nav').slick({
   //   slidesToShow: 3,
