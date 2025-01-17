@@ -70,9 +70,11 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  height: $footer-xs-height;
+  // height: $footer-xs-height;
+  height: 400px;
   @media (min-width: $screen-sm-min) {
-    height: $footer-sm-height;
+    // height: $footer-sm-height;
+    height: 210px;
   }
   background-color: $navbar-bg-color;
   padding-top: 30px;
