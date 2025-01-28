@@ -1,11 +1,12 @@
-@import "font-awesome-sprockets";
+// @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'font-awesome.css';
 
 @import "variables";
 @import "color";
 
-@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-sprockets";
 // @import "slick";
 @import "slick.css.scss";
 
