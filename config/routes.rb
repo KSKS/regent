@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'cap_food' => 'pages#cap_food', as: :cap_food
   get 'drinks' => 'pages#drinks', as: :drinks
   # get 'mooncakes' => 'pages#mooncakes', as: :mooncakes
-  root 'pages#home'
+  root 'pages#bakery'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
