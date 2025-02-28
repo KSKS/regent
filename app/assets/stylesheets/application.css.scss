@@ -93,6 +93,7 @@ footer {
     &.phone {
       border-bottom: 1px dotted #aaa;
       text-decoration: none;
+      color: white;
     }
   }
   .ss-link {
@@ -108,9 +109,10 @@ footer {
   }
   table.footer-info {
     margin: 0 20px;
-    width: 120px;
-    text-align: left;
+    width: 160px;
+    text-align: center;
     display: inline-block;
+    height: 90px;
     td {
       > .footer-title {
         font-weight: 600;
