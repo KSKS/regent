@@ -5,6 +5,7 @@
 # property set.  Don't declare `role :all`, it's a meta role.
 
 set :user, 'deploy'
+# set :user, 'root'
 
 # role :app, %w{deploy@example.com}
 # role :web, %w{deploy@example.com}
@@ -18,7 +19,8 @@ set :user, 'deploy'
 # used to set extended properties on the server.
 
 # server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
-server 'regentmain', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
+# server '104.131.137.227', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
+server '157.245.189.26', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
 
 # Custom SSH Options
 # ==================
