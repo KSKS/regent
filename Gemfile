@@ -77,3 +77,6 @@ gem 'thin'
 
 gem 'ed25519', '< 2.0'
 gem 'bcrypt_pbkdf', '< 2.0'
+
+gem 'mutex_m'
+gem 'bigdecimal'
