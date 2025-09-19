@@ -70,8 +70,7 @@ gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dab
 
 gem 'concurrent-ruby', '1.3.4'
 
-# gem 'sqlite3', '~> 1.4'
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.4'
 
 gem 'thin'
 
