@@ -92,8 +92,6 @@ GEM
     bigdecimal (3.2.3)
     binding_of_caller (1.0.1)
       debug_inspector (>= 1.2.0)
-    bootsnap (1.18.6)
-      msgpack (~> 1.2)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -176,7 +174,6 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
     minitest (5.25.5)
-    msgpack (1.8.0)
     mutex_m (0.3.0)
     net-imap (0.5.10)
       date
@@ -354,7 +351,6 @@ DEPENDENCIES
   better_errors
   bigdecimal
   binding_of_caller
-  bootsnap
   bootstrap-sass
   capistrano
   capistrano-rails

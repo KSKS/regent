@@ -42,7 +42,7 @@ gem 'spring',        group: :development
 gem 'ruby-hmac'
 gem 'rest-client'
 
-gem 'bootsnap'
+# gem 'bootsnap'
 
 gem 'activemodel-serializers-xml'
 
