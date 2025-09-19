@@ -58,13 +58,15 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-gem 'unicorn', platform: "ruby"
-gem 'unicorn-worker-killer', platform: "ruby"
+# gem 'unicorn', platform: "ruby"
+# gem 'unicorn-worker-killer', platform: "ruby"
+gem 'unicorn'
 
 # Use Capistrano for deployment
 gem 'capistrano-rails'
 gem 'capistrano'
 gem 'capistrano-rbenv'
+gem 'capistrano-bundler'
 
 gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
