@@ -7,8 +7,9 @@ set -e
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=<%= current_path %>
 PID=<%= fetch(:unicorn_pid) %>
-CMD="<%= shared_path %>/bin/unicorn -D -c <%= shared_path %>/config/unicorn.conf.rb -E <%= fetch(:rails_env) %>"
-#INIT_CONF=$APP_ROOT/config/init.conf
+# CMD="<%= shared_path %>/bin/unicorn -D -c <%= shared_path %>/config/unicorn.conf.rb -E <%= fetch(:rails_env) %>"
+# CMD="<%= /usr/bin/unicorn -D -c <%= shared_path %>/config/unicorn.conf.rb -E <%= fetch(:rails_env) %>"
+CMD="bundle exec unicorn -D -c /var/www/regent/shared/config/unicorn.conf.rb -E production"#INIT_CONF=$APP_ROOT/config/init.conf
 action="$1"
 set -u
 
@@ -29,7 +30,10 @@ oldsig () {
 case $action in
 start)
   sig 0 && echo >&2 "Already running" && exit 0
-  su -c "$CMD" - <%= fetch(:user) %>
+  # su -c "$CMD" - <%= fetch(:user) %>
+  pushd /var/www/regent/current
+  su -c "$CMD" - deploy
+  popd
   ;;
 stop)
   sig QUIT && exit 0

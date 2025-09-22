@@ -12,7 +12,7 @@ set :repo_url, 'git@github.com:KSKS/regent.git'
 set :deploy_to, '/var/www/regent'
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :pretty
 # set :format, :pretty
