@@ -23713,7 +23713,7 @@ footer {
 @media (min-width: 768px) {
   /* line 69, app/assets/stylesheets/application.css.scss */
   footer {
-    height: 210px;
+    height: 170px;
   }
 }
 
@@ -23732,39 +23732,41 @@ footer a:hover, footer a :active, footer a :focus {
 footer a.phone {
   border-bottom: 1px dotted #aaa;
   text-decoration: none;
+  color: white;
 }
 
-/* line 98, app/assets/stylesheets/application.css.scss */
+/* line 99, app/assets/stylesheets/application.css.scss */
 footer .ss-link {
   font-weight: 600;
 }
 
-/* line 101, app/assets/stylesheets/application.css.scss */
+/* line 102, app/assets/stylesheets/application.css.scss */
 footer .col-footer {
   text-align: center;
   overflow: hidden;
   display: inline-block;
 }
 
-/* line 105, app/assets/stylesheets/application.css.scss */
+/* line 106, app/assets/stylesheets/application.css.scss */
 footer .col-footer > .footer-panel {
   display: inline;
 }
 
-/* line 109, app/assets/stylesheets/application.css.scss */
+/* line 110, app/assets/stylesheets/application.css.scss */
 footer table.footer-info {
   margin: 0 20px;
-  width: 120px;
-  text-align: left;
+  width: 160px;
+  text-align: center;
   display: inline-block;
+  height: 90px;
 }
 
-/* line 115, app/assets/stylesheets/application.css.scss */
+/* line 117, app/assets/stylesheets/application.css.scss */
 footer table.footer-info td > .footer-title {
   font-weight: 600;
 }
 
-/* line 120, app/assets/stylesheets/application.css.scss */
+/* line 122, app/assets/stylesheets/application.css.scss */
 footer .copyright {
   font-size: 10px;
 }
