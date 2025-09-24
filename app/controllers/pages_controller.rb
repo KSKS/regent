@@ -3,27 +3,27 @@ class PagesController < ApplicationController
   def home
   end
 
-  def capitol_hill
+  def issaquah
   end
   
-  def redmond
+  def bellevue
   end
 
   def bakery
   end
 
-  def redmond_menu
-    render json: fetch_menu(:redmond)
+  def bellevue_menu
+    render json: fetch_menu(:bellevue)
   end
 
-  def cap_menu
-    render json: fetch_menu(:cap)
+  def issaquah_menu
+    render json: fetch_menu(:issaquah)
   end
 
-  def cap_food
+  def issaquah_food
   end
 
-  def redmond_food
+  def bellevue_food
   end
 
   def drinks

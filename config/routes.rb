@@ -4,14 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  get 'capitol_hill' => 'pages#capitol_hill', as: :caphill
+  get 'issaquah' => 'pages#issaquah', as: :issaquah
   get 'bellevue' => 'pages#bellevue', as: :bellevue
   get 'factoria' => 'pages#factoria', as: :factoria
   get 'bakery' => 'pages#bakery', as: :bakery
   get 'bellevue_menu' => 'pages#bellevue_menu', as: :bellevue_menu
-  get 'cap_menu' => 'pages#cap_menu', as: :cap_menu
+  get 'issaquah_menu' => 'pages#issaquah_menu', as: :issaquah_menu
   get 'bellevue_food' => 'pages#bellevue_food', as: :bellevue_food
-  get 'cap_food' => 'pages#cap_food', as: :cap_food
+  get 'issaquah_food' => 'pages#issaquah_food', as: :issaquah_food
   get 'drinks' => 'pages#drinks', as: :drinks
   # get 'mooncakes' => 'pages#mooncakes', as: :mooncakes
   root 'pages#bakery'
