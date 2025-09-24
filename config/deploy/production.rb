@@ -20,7 +20,9 @@ set :user, 'deploy'
 
 # server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
 # server '104.131.137.227', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
-server '157.245.189.26', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
+# server '157.245.189.26', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
+# Using reserved IP
+server '138.197.234.46', user: fetch(:user), roles: %w{web app db}#, my_property: :my_value
 
 # Custom SSH Options
 # ==================
