@@ -8,8 +8,9 @@ TIMEOUT=${TIMEOUT-60}
 APP_ROOT=<%= current_path %>
 PID=<%= fetch(:unicorn_pid) %>
 # CMD="<%= shared_path %>/bin/unicorn -D -c <%= shared_path %>/config/unicorn.conf.rb -E <%= fetch(:rails_env) %>"
-# CMD="<%= /usr/bin/unicorn -D -c <%= shared_path %>/config/unicorn.conf.rb -E <%= fetch(:rails_env) %>"
-CMD="bundle exec unicorn -D -c /var/www/regent/shared/config/unicorn.conf.rb -E production"#INIT_CONF=$APP_ROOT/config/init.conf
+# CMD="/usr/bin/unicorn -D -c <%= shared_path %>/config/unicorn.conf.rb -E <%= fetch(:rails_env) %>"
+CMD="bundle exec unicorn -D -c /var/www/regent/shared/config/unicorn.conf.rb -E production"
+#INIT_CONF=$APP_ROOT/config/init.conf
 action="$1"
 set -u
 
@@ -65,8 +66,8 @@ upgrade)
     fi
     exit 0
   fi
-  echo >&2 "Couldn't upgrade, starting '$CMD' instead"
-  su -c "$CMD" - <%= fetch(:user) %>
+  echo >&2 "Couldn't upgrade, starting '$CMD' instead"  
+  su -c "pushd /var/www/regent/current; $CMD; popd" - <%= fetch(:user) %>
   ;;
 reopen-logs)
   sig USR1
